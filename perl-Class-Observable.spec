@@ -7,12 +7,12 @@
 Summary:	Class::Observable - Allow other classes and objects to respond to events in yours
 Summary(pl):	Modu³ Class::Observable - pozwalaj±cy innym klasom odpowiadaæ na zdarzenia
 Name:		perl-Class-Observable
-Version:	0.03
-Release:	2
+Version:	1.00
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	161bab9d9b70ba9eae53012d1101b043
+# Source0-md5:	f9ef913eb62974e880b7238182b2ff53
 BuildRequires:	perl-devel >= 5.6
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Class-ISA >= 0.32
