@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Class
-%define	pnam	Observable
+%define		pdir	Class
+%define		pnam	Observable
 Summary:	Class::Observable - allow other classes and objects to respond to events in yours
 Summary(pl):	Class::Observable - umo¿liwienie innym klasom odpowiadania na zdarzenia
 Name:		perl-Class-Observable
