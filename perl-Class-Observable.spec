@@ -1,24 +1,25 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Class
 %define	pnam	Observable
 Summary:	Class::Observable - Allow other classes and objects to respond to events in yours
 Summary(pl):	Modu³ Class::Observable - pozwalaj±cy innym klasom odpowiadaæ na zdarzenia
 Name:		perl-Class-Observable
-Version:	1.00
+Version:	1.02
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f9ef913eb62974e880b7238182b2ff53
-BuildRequires:	perl-devel >= 5.6
-%if %{?_without_tests:0}%{!?_without_tests:1}
+# Source0-md5:	792de9e203bda8940d30caca3fb97d60
+BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
 BuildRequires:	perl-Class-ISA >= 0.32
 BuildRequires:	perl-Test-Simple >= 0.40
 %endif
-BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -42,7 +43,7 @@ wyst±pieniu okre¶lonych zdarzeñ.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
