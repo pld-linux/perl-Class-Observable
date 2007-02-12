@@ -6,7 +6,7 @@
 %define		pdir	Class
 %define		pnam	Observable
 Summary:	Class::Observable - allow other classes and objects to respond to events in yours
-Summary(pl):	Class::Observable - umo¿liwienie innym klasom odpowiadania na zdarzenia
+Summary(pl.UTF-8):   Class::Observable - umoÅ¼liwienie innym klasom odpowiadania na zdarzenia
 Name:		perl-Class-Observable
 Version:	1.04
 Release:	1
@@ -30,11 +30,11 @@ java.util.Observable class and the java.util.Observer interface. Using
 them, you can decouple an object from the one or more objects that
 wish to be notified whenever particular events occur.
 
-%description -l pl
-Znaj±cy Javê byæ mo¿e spotkali siê z klas± java.util.Observable i
-interfejsem java.util.Observer. Przy ich u¿yciu mo¿na zrezygnowaæ z
-³±czenia z jednym lub wiêcej obiektów, które maj± byæ powiadamiane o
-wyst±pieniu okre¶lonych zdarzeñ.
+%description -l pl.UTF-8
+ZnajÄ…cy JavÄ™ byÄ‡ moÅ¼e spotkali siÄ™ z klasÄ… java.util.Observable i
+interfejsem java.util.Observer. Przy ich uÅ¼yciu moÅ¼na zrezygnowaÄ‡ z
+Å‚Ä…czenia z jednym lub wiÄ™cej obiektÃ³w, ktÃ³re majÄ… byÄ‡ powiadamiane o
+wystÄ…pieniu okreÅ›lonych zdarzeÅ„.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
