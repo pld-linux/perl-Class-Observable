@@ -4,7 +4,6 @@
 
 %define		pdir	Class
 %define		pnam	Observable
-%include	/usr/lib/rpm/macros.perl
 Summary:	Class::Observable - allow other classes and objects to respond to events in yours
 Summary(pl.UTF-8):	Class::Observable - umożliwienie innym klasom odpowiadania na zdarzenia
 Name:		perl-Class-Observable
