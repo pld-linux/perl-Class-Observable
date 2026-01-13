@@ -8,7 +8,7 @@ Summary:	Class::Observable - allow other classes and objects to respond to event
 Summary(pl.UTF-8):	Class::Observable - umożliwienie innym klasom odpowiadania na zdarzenia
 Name:		perl-Class-Observable
 Version:	1.04
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
